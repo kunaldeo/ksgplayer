@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="ksgplayer.poweredbyk.com" name="KSGPlayer" version="2.0.3" provider-name="KunalD">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.parsedom" version="0.9.1"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Sharing Galaxy Player by Kunal</summary>
+        <language>en</language>
+        <description lang="en">Play videos from Sharing Galaxy</description>
+        <website>http://poweredbyk.com</website>
+        <source>https://github.com/kunaldeo</source>
+        <forum>http://forum.xbmc.org/showthread.php?tid=137984</forum>
+        <email>kunaldeo@gmail.com</email>
+    </extension>
+</addon>
