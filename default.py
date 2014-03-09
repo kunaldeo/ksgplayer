@@ -19,6 +19,8 @@ TV1HI = "http://58.65.128.17:606"
 EVDS1 = "http://58.65.128.10:812"
 HVDS1 = "http://58.65.128.10:811"
 
+CARTS1 = "http://58.65.128.10:806"
+
 # ------------------------------------------------------------
 def fileNameFromURL(url):
     return os.path.basename(urlparse.urlsplit(url).path).replace("%20"," ").replace("?sortby=", "")
@@ -70,6 +72,7 @@ if path == '/':
     addDir("TV Hindi", "/TV1HI/", 1, "TV1HI")
     addDir("English Video Songs", "/EVDS1/", 1, "EVDS1")
     addDir("Hindi Video Songs", "/HVDS1/", 1, "HVDS1")
+    addDir("Cartoon Show", "/CARTS1/", 1, "CARTS1")
 
 elif path == '/HIS1/':
     buildMainMenu(HIS1)
@@ -89,6 +92,8 @@ elif path == '/EVDS1/':
     buildMainMenu(EVDS1)
 elif path == '/HVDS1/':
     buildMainMenu(HVDS1)
+elif path == '/CARTS1/':
+    buildMainMenu(CARTS1)
 
 
 else:
